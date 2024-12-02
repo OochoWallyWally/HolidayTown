@@ -1,0 +1,60 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color of the entire page */
+body {
+    background-color: #3c8d0d; /* Set background color */
+    font-family: 'Merry Christmas', cursive; /* Set font */
+    color: white; /* Make text white for contrast */
+    height: 100vh; /* Ensure the page takes up the full viewport height */
+    position: relative; /* For snowflakes to appear in the body */
+    overflow: hidden; /* Hide anything that goes outside the viewport */
+}
+
+/* Snowflakes Styling */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1; /* Snowflakes behind the text */
+}
+
+/* Position the text at the top of the page */
+.content {
+    position: absolute;
+    top: 20px; /* 20px from the top of the screen */
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Higher z-index to ensure text is above snowflakes */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Styling for the image */
+.image-container {
+    margin-top: 30px; /* Add some space above the image */
+    width: 80%; /* Set image width to 80% of the screen */
+    max-width: 600px; /* Set a maximum width for the image */
+    text-align: center; /* Center the image horizontally */
+}
+
+.holiday-image {
+    width: 100%; /* Make image responsive to container width */
+    height: auto; /* Maintain aspect ratio */
+}
